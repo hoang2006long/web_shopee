@@ -1,0 +1,171 @@
+:root {
+    --primeryColor: rgba(238,75,43);  
+    --white-color: white;
+    --grey-color: #333;
+
+    --header-height: 12rem;
+    --navbar-height: 3.6rem;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height))
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.navBar-text-hover:hover{
+    opacity: 0.8;
+}
+
+.lst-style-none{
+    list-style-type: none;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-white{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* ==========================ANIMATION====================== */
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =========================MODAL===================== */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    animation: FadeIn linear 0.15s;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body{
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    animation: growth linear 0.3s;
+}
+
+.modal{
+    display: none;
+}
+
+.auth-form-register{
+    display: none;
+}
+
+.auth-form-login{
+    display: none;
+}
+
+/* =================z-index============ */
+.modal__body{
+    z-index: 4;
+}
+
+.navbarRight__notification{
+    z-index: 3;
+}
+
+.sub-account,
+.header__search-input:focus ~ .header__search-history,
+.header__cart-list{
+    z-index: 2;
+}
+
+.link-container__QR-code,
+.filter-left-side .filter__price{
+    z-index: 1;
+}
+
+/* ======================GRID===================== */
+.grid{
+    width: 90%; 
+    margin: 0 auto;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-2{
+    width: 16.66666%;
+}
+
+.grid__column-10{
+    width: 83.33333%;
+}
+
+.grid__column-2-4{
+    width:20%;
+}
+
+/* ========================pagination=================================== */
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-item{
+    list-style-type: none;
+    border-radius: 3px;
+    margin: 0 0.5rem;
+}
+
+.pagination-item-link{
+    text-decoration: none;
+    color: #939393;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    padding: 0.5rem 2rem;
+
+}
+
+.home-paginition .pagination-item:nth-child(7){
+    font-size: 2.3rem;
+    color: #939393;
+}
