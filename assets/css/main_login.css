@@ -18,9 +18,49 @@
     background-image: linear-gradient(0,#fe6433, #f53f2d);
 }   
 
+.header__sort-bar{
+    display: none;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header__sort-bar .header-sort__item{
+
+}
+
+.header-sort__link{
+    text-decoration: none;
+    color: var(--grey-color);
+    font-size: 1.4rem;
+    display: block;
+    text-align: center;
+    line-height: 5rem;
+    position: relative;
+}
+
+.header-sort__link::before{
+    content: "";
+    left: 0;
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border-left: 1px solid #e5e5e5;
+}
+
+.header-sort__link:last-child{
+    border: none;
+}
+
+
+.header-sort__link--active{
+    color: var(--primeryColor) ;
+}
+
 /* ========================================NAVBAR========================================*/
 .navbar {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     height: var(--navbar-height);
     margin: 0 auto;
@@ -98,7 +138,7 @@
 /*====================NAVBAR RIGHT==================== */
 .navbar .navbarRight{
     line-height: 4rem;
-    display: flex;
+    display: inline-flex;
 }
 
 .navbarRight__notification{
@@ -241,7 +281,6 @@
     display: flex;
     position: relative;
     align-items: center;
-    padding-top: 0.8rem;
 }
 
 .account__img{
@@ -317,11 +356,11 @@
 
 /*  ========================================HEADER-WITH-SEARCH======================================== */
 .header-with-search{
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     height: var(--header-with-search);
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -587,6 +626,7 @@
 .cart-list__body .cart-list__body-items{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .cart-list__body .cart-list__body-items:hover{
@@ -684,13 +724,14 @@
     padding: 1rem;
     border-radius: 2px;
     margin-right: -26rem;
+    cursor: pointer;
 }
 
 .cart-list__footer .cart-list__button:hover{
     background-color: rgba(238,75,43,0.7);
 }
 
-.cart-list__footer .cart-list__button a{
+.cart-list__footer .cart-list__button{
     color: var(--white-color);
     font-size: 1.6rem;
     text-decoration: none;
@@ -1063,7 +1104,7 @@
 }
 
 .product-item__sold-number{
-    margin-top: 0.3rem;
+    margin-top: 0.3rem; 
     font-size: 1.3rem;
     padding-left: 1rem;
 }

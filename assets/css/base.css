@@ -115,7 +115,8 @@ html {
 }
 
 .link-container__QR-code,
-.filter-left-side .filter__price{
+.filter-left-side .filter__price,
+.header__search-option{
     z-index: 1;
 }
 
