@@ -78,4 +78,48 @@
     .hide-on-mobile{
         display: none !important;
     }
+
+    .header__logo{
+        margin: 0 auto;
+    }
+
+    .header__mobile-search,
+    .header__mobile-list{
+        display: flex !important;
+        cursor: pointer !important;
+    }
+
+    .header__logo{
+        width: 10rem;
+    }
+
+    .header__cart{
+        width: 8rem;
+    }
+
+    .header-cart__notice{
+        right: 1.5rem;
+    }
+
+    #header__mobile-input:checked ~ .header__mobile-search ~ .header__search{
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    .header__search{
+        height: 5rem;
+        z-index: 0;
+        width: 100%;
+        display: flex !important;
+        position: fixed !important;
+        transition: all linear 0.25s;
+        top: 7rem;
+        opacity: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .header__search-history{
+        width: 100vw !important;
+    }
 }

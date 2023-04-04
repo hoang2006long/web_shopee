@@ -17,7 +17,7 @@
     height: var(--header-height);
     background-image: linear-gradient(0,#fe6433, #f53f2d);
 }   
-
+/* header-sort-bar */
 .header__sort-bar{
     display: none;
     justify-content: space-between;
@@ -49,8 +49,8 @@
     border-left: 1px solid #e5e5e5;
 }
 
-.header-sort__link:last-child{
-    border: none;
+.header-sort__item:first-child .header-sort__link::before{
+    border-left: none;
 }
 
 
@@ -58,6 +58,31 @@
     color: var(--primeryColor) ;
 }
 
+/* header-mobile */
+/* .header__mobile-btn{
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+    order: -1;
+} */
+
+.header__mobile-search,
+.header__mobile-list{
+    height: 100%;
+    justify-content: center;
+    display: none;
+    order: -1;
+    display: flex;
+    width: 4rem;
+    display: none;
+}
+
+.header__mobile-search i,
+.header__mobile-list i{
+    color: #fff;
+    font-size: 2rem;
+    line-height: 7rem;
+}
 /* ========================================NAVBAR========================================*/
 .navbar {
     display: flex !important;
