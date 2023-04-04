@@ -122,4 +122,29 @@
     .header__search-history{
         width: 100vw !important;
     }
+
+    .pagination .pagination-item{
+        margin: 0;
+    }
+
+    .pagination .pagination-item a{
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .header-sort__item{
+        padding: 0;
+    }
+
+    .home-product {
+        margin-top: 13.8rem;
+    }
+
+    .product-item-wrap{
+        padding: 0;
+    }
+    
+    .footer{
+        display: none;
+    }
 }
