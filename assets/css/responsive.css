@@ -71,6 +71,10 @@
         margin-top: 2rem;
     }
 
+    .cart-list__footer .cart-list__button{
+        border-radius: 0;
+    }
+
     .footer-wrap{
         justify-content: center;
     }
