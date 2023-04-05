@@ -156,7 +156,7 @@
         transition: all linear 0.25s;
         top: 7rem;
         opacity: 0;
-        transform: translateY(-50%);
+        transform: translateY(-250%);
         z-index: 1;
     }
 
