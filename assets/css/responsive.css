@@ -70,6 +70,21 @@
         margin: 0;
         margin-top: 2rem;
     }
+
+    .footer-wrap{
+        justify-content: center;
+    }
+
+    .footer-content{
+        padding:1rem 2rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__heading{
+        text-align: center;
+    }
 }
 
 /* pc */
@@ -107,7 +122,7 @@
     }
 
     .header__logo{
-        width: 13rem;
+        width: 12rem;
     }
 
     .header__cart{
@@ -158,11 +173,6 @@
 
     .product-item-wrap{
         padding: 0;
-    }
-
-    .footer{
-       
-        display: none;
     }
 
     .header-sort__link--active{
