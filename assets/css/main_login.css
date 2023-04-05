@@ -64,7 +64,7 @@
 .header__mobile-list i{
     color: #fff;
     font-size: 1.8rem;
-    line-height: 7rem;
+    line-height: 6rem;
 }
 
 /* ========================================NAVBAR========================================*/
@@ -712,6 +712,10 @@
 .cart-list__price-items .number{
     color: #999;
     font-size: 1.4rem;
+}
+
+.cart-list__price{
+    margin-right: 1.5rem;
 }
 
 .cart-list__price .delete{

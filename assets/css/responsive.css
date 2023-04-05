@@ -84,6 +84,11 @@
 
     .footer__heading{
         text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .footer-items{
+        font-size: 1.1rem;
     }
 }
 
@@ -107,22 +112,23 @@
 
 /* mobile */
 @media (max-width:739px) {
+    :root {
+        --header-height: 6rem;
+        --navbar-height: 0rem;
+    }
     .hide-on-mobile{
         display: none !important;
     }
 
     .header__logo{
         margin: 0 auto;
+        width: 11rem;
     }
 
     .header__mobile-search,
     .header__mobile-list{
         display: flex !important;
         cursor: pointer !important;
-    }
-
-    .header__logo{
-        width: 12rem;
     }
 
     .header__cart{
