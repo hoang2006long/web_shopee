@@ -72,7 +72,7 @@
     }
 
     .cart-list__footer .cart-list__button{
-        border-radius: none;
+        border-radius: 0px !important;
     }
 
     .footer-wrap{
