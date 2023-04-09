@@ -99,9 +99,14 @@ html {
     display: none;
 }
 
+.open{
+    display: flex !important;
+}
+
 /* =================z-index============ */
-.modal__body{
-    z-index: 4;
+.modal__body,
+.modal{
+    z-index: 5;
 }
 
 .navbarRight__notification{
